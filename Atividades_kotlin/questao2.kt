@@ -22,7 +22,7 @@ open class Pessoa(nome: String, altura: Double) {
     }
 
     override fun toString(): String {
-        return "${this.nome}(${this.dataNascimento}, ${this.altura})";
+        return "nome: ${this.nome}, data de nascimento: ${this.dataNascimento}, a altura é: ${this.altura}";
     }
 }
 
@@ -69,8 +69,9 @@ class Agenda() {
 
 fun main() {
     
-    //val pessoa = Pessoa("mario", 1.80,  2001)
-    //println(pessoa.toString());
+    val pessoa = Pessoa("mario", 1.80,  2001)
+    println(pessoa.toString())
+    println("idade: " + pessoa.calculo(2001));
     
     
     val agenda = Agenda();
@@ -107,3 +108,4 @@ fun main() {
 
 
 }
+
