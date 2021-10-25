@@ -46,7 +46,7 @@ class Agenda() {
                 pessoas[i] = pessoas[--quantP];
                 return true;
             }
-        }
+        } 
         println("Nao achei essa pessoa");
         return false;
     }
@@ -75,12 +75,35 @@ fun main() {
     
     val agenda = Agenda();
     val contato0 = Pessoa("marioneto", altura = 1.80, 2001);
+    val contato1 = Pessoa("marione", altura = 1.80, 2001);
+    val contato2 = Pessoa("marion", altura = 1.80, 2001);
+    val contato3 = Pessoa("mario", altura = 1.80, 2001);
+    val contato4 = Pessoa("mari", altura = 1.80, 2001);
+    val contato5 = Pessoa("mar", altura = 1.80, 2001);
+    val contato6 = Pessoa("ma", altura = 1.80, 2001);
+    val contato7 = Pessoa("m", altura = 1.80, 2001);
+    val contato8 = Pessoa("mariaa", altura = 1.80, 2001);
+    val contato9 = Pessoa("mariasa", altura = 1.80, 2001);
+    val contato10 = Pessoa("marilu", altura = 1.80, 2001);
     agenda.armazenaPessoa(contato0);
+    agenda.armazenaPessoa(contato1);
+    agenda.armazenaPessoa(contato2);
+    agenda.armazenaPessoa(contato3);
+    agenda.armazenaPessoa(contato4);
+    agenda.armazenaPessoa(contato5);
+    agenda.armazenaPessoa(contato6);
+    agenda.armazenaPessoa(contato7);
+    agenda.armazenaPessoa(contato8);
+    agenda.armazenaPessoa(contato9);
     
-    //agenda.printAgenda();
-    
-   // agenda.buscaPessoa("marioneto");
-
+    agenda.removePessoa("marioneto")
+    agenda.printAgenda();
+    println("atualizando")
+    agenda.armazenaPessoa(contato10);
+    agenda.printAgenda();
  
+   //agenda.buscaPessoa("mario");
+
+
 
 }
