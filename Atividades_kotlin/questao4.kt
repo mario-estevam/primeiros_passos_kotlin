@@ -70,6 +70,7 @@ class Funcionario:Pessoa {
     constructor(nome:String, data_nascimento:String, altura:Int, anoNascimento:Int, salario:Float) : super(nome,data_nascimento, altura, anoNascimento){
         this.salario = salario;
     }
+    override fun toString() = "o funcionario é: $nome que nasceu em: $data_nascimento, com: $altura de altura, e recebe $salario";
 }
 
 fun main(){
@@ -97,7 +98,7 @@ fun main(){
 
     funcionario = Funcionario("marcone", "04.05.2004", 182, 2004, 7000f);
 
-    print(funcionario);
-    print(funcionario.salario);
+    println(funcionario.toString());
+  
 
 }
